@@ -1,0 +1,14 @@
+{
+    "contractsDir": "contracts",
+    "artifactsDir": "artifacts",
+    "contracts": ["AirdropBatcher.sol"],
+    "solcVersion": "0.4.18",
+    "compilerSettings": {
+        "optimizer": { "enabled": true, "runs": 200 },
+        "outputSelection": {
+            "*": {
+                "*": ["abi", "evm.bytecode.object"]
+            }
+        }
+    }
+}

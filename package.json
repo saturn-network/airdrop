@@ -1,0 +1,61 @@
+{
+  "name": "@saturnnetwork/airdrop",
+  "version": "1.0.0",
+  "description": "Easy to use token airdrop tool that integrates with Saturn Network",
+  "homepage": "https://www.saturn.network/blog/airdrop-services/",
+  "bugs": "https://forum.saturn.network/",
+  "main": "index.js",
+  "bin": "./index.js",
+  "keywords": [
+    "blockchain",
+    "eth",
+    "etc",
+    "evm",
+    "callisto",
+    "clo",
+    "tomochain",
+    "tomo",
+    "poa",
+    "ethereum",
+    "ethereum-classic",
+    "airdrop",
+    "token",
+    "erc20",
+    "erc223",
+    "saturn",
+    "dex",
+    "0x",
+    "decentralized"
+  ],
+  "author": "Saturn Network",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "trace": "MODE=trace truffle test",
+    "clean": "shx rm -rf coverage && shx rm -rf .0x-artifacts/* && shx rm -rf build/* && shx rm -rf artifacts/*",
+    "test": "truffle test",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "sol-compiler": "sol-compiler"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bignumber.js": "^8.1.1",
+    "chalk": "^2.4.2",
+    "ethers": "^4.0.37",
+    "fast-glob": "^3.1.0",
+    "inquirer": "^7.0.0",
+    "lodash": "^4.17.15",
+    "ora": "^3.4.0",
+    "shx": "^0.3.2"
+  },
+  "devDependencies": {
+    "@0x/sol-compiler": "^3.1.14",
+    "@0x/subproviders": "^5.0.3",
+    "istanbul": "^0.4.5",
+    "truffle": "^5.0.4",
+    "web3-provider-engine": "^14.1.0"
+  }
+}

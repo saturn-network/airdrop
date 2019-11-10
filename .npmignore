@@ -1,0 +1,12 @@
+coverage/
+.travis.yml
+*.ts
+!*.d.ts
+
+contracts/
+migrations/
+artifacts/
+test/
+compiler.json
+truffle-config.js
+yarn.lock
