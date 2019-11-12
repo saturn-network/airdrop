@@ -271,8 +271,7 @@ async function activateAirdrop() {
 }
 
 async function doAirdrop() {
-  let batchinfo = JSON.parse(fs.readFileSync('./artifacts/AirdropBatcher.json'))
-  let batchabi = batchinfo.compilerOutput.abi
+  let batchabi = require('./config/airdropabi.json')
   console.log(`Airdropping ${config.airdropAmount} ${config.tokenName} tokens to ${config.addresses.length} addresses`)
   let batch = new ethers.Contract(config.airdropContractAddress, batchabi, config.wallet)
   let gasPrice = await utils.gasPrice(config.blockchain)
