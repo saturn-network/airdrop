@@ -75,8 +75,7 @@ function walletFromPkey() {
   inquirer.prompt(pkeyinput).then(answers => {
     try {
       let wallet = new ethers.Wallet(answers.pkey)
-      wallet.connect(config.provider)
-      config.wallet = wallet
+      config.wallet = wallet.connect(config.provider)
       config.myAddress = wallet.address
       getTokenInfo()
     } catch(e) {
