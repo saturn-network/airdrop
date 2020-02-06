@@ -1,6 +1,6 @@
 {
   "name": "@saturnnetwork/airdrop",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Easy to use token airdrop tool that integrates with Saturn Network",
   "homepage": "https://www.saturn.network/blog/airdrop-services/",
   "bugs": "https://forum.saturn.network/",

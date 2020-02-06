@@ -67,7 +67,7 @@ let erc20Airdrop = async (tokenhash, wallet, batch, addresses, gasPrice) => {
     if (i > 0) {
       let tx = await batch.batchERC20Airdrop(
         token.address,
-        ethers.utils.bigNumberify(amountPerPerson.valueOf()),
+        ethers.utils.bigNumberify(amountPerPerson.toFixed()),
         block,
         { gasPrice: gasPrice }
       )
@@ -93,7 +93,7 @@ let erc223Airdrop = async (tokenhash, wallet, batch, addresses, gasPrice) => {
   let i = 0
   for (block of chunks) {
     ++i;
-    let payload = makePayload(ethers.utils.bigNumberify(amountPerPerson.valueOf()), block)
+    let payload = makePayload(ethers.utils.bigNumberify(amountPerPerson.toFixed()), block)
     let batchValueAmount = amountPerPerson.times(block.length)
 
     let tx = await token.transfer(
