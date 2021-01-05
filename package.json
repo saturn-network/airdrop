@@ -41,7 +41,7 @@
     "sol-compiler": "sol-compiler"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "bignumber.js": "^8.1.1",
     "chalk": "^2.4.2",
     "ethers": "^4.0.37",
